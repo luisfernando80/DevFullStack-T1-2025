@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários em HTML - 10/06 - aula 25</title>
+
+    <!-- ESTILOS DO NOSSO FORMULÁRIO -->
+
+    <style>
+      body {
+        font-family: "montserrat", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #f3f3f3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .form-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.078);
+      }
+
+      h2 {
+        text-align: center;
+        color: #333;
+        font-size: 26px;
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      select,
+      textarea {
+        width: 90%;
+        margin-bottom: 4px;
+        padding: 5px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+      }
+
+      input[type="radio"],
+      input[type="checkbox"] {
+        margin-bottom: 8px;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 12px;
+        border: 0;
+        border-radius: 7px;
+        width: 100%;
+        font-size: 16px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #45a049;
+        }
+      }
+    </style>
+  </head>
+
+  <!-- CORPO DO FORMULÁRIO -->
+
+  <body>
+    <div>
+      <form class="form-container" action="">
+        <h2>Cadastro de Usuário</h2>
+        <label for="">Nome:</label>
+        <input type="text" placeholder="Seu nome completo" />
+
+        <label for="">E-mail:</label>
+        <input type="email" placeholder="Digite seu e-mail" />
+
+        <label for="">Senha:</label>
+        <input type="password" placeholder="Digite sua senha" />
+
+        <label for="">Gênero:</label>
+        <label for="male">
+          <input type="radio" name="gender" value="male" />Masculino
+        </label>
+        <label for="female">
+          <input type="radio" name="gender" value="female" />Feminino
+        </label>
+
+        <label for="city">Cidade:</label>
+        <select name="city" id="">
+          <option value="AL">Arapiraca</option>
+          <option value="AL">Maceió</option>
+          <option value="AL">Batalha</option>
+        </select>
+
+        <label for="message">Mensagem:</label>
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="Deixe sua mensagem"
+          id=""
+        ></textarea>
+
+        <label for="terms">
+          <input type="checkbox" name="terms" required />Aceito os termos de
+          condição
+        </label>
+
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+  </body>
+</html>
