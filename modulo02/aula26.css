@@ -1,0 +1,160 @@
+/* STYLE GLOBAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  color: #404040;
+  scroll-behavior: smooth;
+}
+
+.secao {
+  display: flex;
+  flex-flow: column;
+  gap: 3rem;
+  padding: 10rem 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  color: #007de3;
+  transition: color 0.1s linear;
+
+  &:hover {
+    cursor: pointer;
+    color: #ff8967;
+  }
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+/* CABECALHO */
+
+.cabecalho {
+  display: flex;
+  gap: 3rem;
+  background-color: white;
+  padding: 1rem 4rem;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0.2rem 0 0.9rem 0.4rem rgb(216, 216, 216);
+  position: sticky;
+  top: 0rem;
+}
+
+.cabecalho-logo {
+  width: 7rem;
+}
+
+.cabecalho-listas {
+  display: flex;
+  gap: 4rem;
+  font-size: 1.6rem;
+}
+
+/* HERO */
+
+.secao.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f2ee;
+  height: 100vh;
+}
+
+iframe {
+  border-radius: 1rem;
+  box-shadow: ;
+}
+
+/* SECAO IMG1 */
+
+.img1 {
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  height: 100vh;
+
+  & img {
+    width: 80rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem 1rem rgb(173, 173, 173);
+  }
+}
+
+/* SECAO IMG2 */
+
+.img2 {
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f2ee;
+  height: 100vh;
+
+  & img {
+    width: 50rem;
+    border-radius: 1rem;
+
+    box-shadow: 0 0 2rem 1rem rgb(173, 173, 173);
+  }
+}
+
+/* SECAO IMG3 */
+
+.img3 {
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  height: 100vh;
+
+  & img {
+    width: 50rem;
+    border-radius: 50%;
+    box-shadow: 0 0 2rem 1rem rgb(173, 173, 173);
+  }
+}
+
+/* SECAO IMG4 */
+
+.img4 {
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f2ee;
+  height: 100vh;
+
+  & img {
+    width: 30rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem 1rem rgb(173, 173, 173);
+  }
+}
+
+/* RODAPÉ */
+
+.rodape {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5rem;
+  padding: 4rem 2rem;
+  background-color: #007de3;
+  font-size: 1.6rem;
+
+  & a {
+    color: white;
+    &:hover {
+      color: #ff8967;
+    }
+  }
+}
+

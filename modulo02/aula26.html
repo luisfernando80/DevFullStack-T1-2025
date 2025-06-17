@@ -1,0 +1,93 @@
+<!-- AULA 26 - 12 DE JUNHO DE 2025 - Quinta-Feira 
+ 
+Trabalhando com Links, Imagens e Mídia em HTML 
+
+********************************* FRONT-END ******* -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 26 - Exercício proposto em aula</title>
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="aula26.css" />
+  </head>
+  <body>
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+      <a href="aula26.html">
+        <img
+          class="cabecalho-logo"
+          src="assets/maisprati_logo.jpeg"
+          alt="logo +praTI"
+        />
+      </a>
+      <nav>
+        <ul class="cabecalho-listas">
+          <a href="#arena">
+            <li>Arena do Grêmio</li>
+          </a>
+          <a href="#jardim">
+            <li>Jardim</li>
+          </a>
+          <a href="#batman">
+            <li>Batman</li>
+          </a>
+          <a href="#casa">
+            <li>Casa</li>
+          </a>
+          <!-- <a href="mailto:contato@maisprati.com.br">
+            <li>Enviar e-mail</li>
+          </a> -->
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+
+      <section class="secao hero">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/fjrozlOVpVc?si=8VAYXKVubc6WHRc6"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <!-- SECAO IMAGEM 1 -->
+      <section id="arena" class="secao img1">
+        <h2>Arena do Grêmio</h2>
+        <img src="assets/Arena.jpg" alt="Arena do Grêmio" />
+      </section>
+
+      <!-- SECAO IMAGEM 2 -->
+      <section id="jardim" class="secao img2">
+        <h2>Jardim</h2>
+        <img src="assets/plantas.jpg" alt="Plantas" />
+      </section>
+
+      <!-- SECAO IMAGEM 3 -->
+      <section id="batman" class="secao img3">
+        <h2>Batman</h2>
+        <img src="assets/batman2.png" alt="Batman" />
+      </section>
+      <!-- SECAO IMAGEM 4 -->
+      <section id="casa" class="secao img4">
+        <h2>Casa</h2>
+        <img src="assets/casaNeblinaLago.jpg" alt="Casa" />
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <a href="mailto:contato@maisprati.com.br">contato@maisprati.com.br</a>
+
+      <a href="tel:+551199999999">Ligue para (11) 9 9999-9999</a>
+    </footer>
+  </body>
+</html>
