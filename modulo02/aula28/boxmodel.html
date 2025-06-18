@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      div {
+        border: 1px solid red;
+      }
+
+      h2 {
+        border: inherit;
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-left: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>content</h2>
+    </div>
+  </body>
+</html>
