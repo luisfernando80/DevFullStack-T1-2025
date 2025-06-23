@@ -1,0 +1,92 @@
+<!-- Exercício: Página com Menu e Cartões usando Flexbox
+
+Objetivo:
+
+Criar uma página web com um menu de navegação no topo e uma seção com três cartões de conteúdo, utilizando Flexbox para o layout e responsividade.
+
+Instruções:
+
+- Crie um menu horizontal com:
+
+- Um logotipo à esquerda.
+
+- Quatro links à direita.
+
+- Abaixo do menu, crie uma área com 3 cartões dispostos lado a lado.
+
+- Use Flexbox para alinhar e distribuir os elementos. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://www.ogol.com.br/img/logos/edicoes/186041_imgbank_.png"
+        alt="logo copa do mundo"
+      />
+
+      <nav>
+        <ul>
+          <a href="#">
+            <li>HOMEM</li>
+          </a>
+          <a href="#">
+            <li>MULHER</li>
+          </a>
+          <a href="#">
+            <li>INFANTIL</li>
+          </a>
+          <a href="#">
+            <li>OUTLET</li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <img
+            src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/9d011ef59d9c4c04a154d23a2572a963_9366/Camisa_Real_Madrid_US_Pack_Branco_JN3073_21_model.jpg"
+            alt="Camisa Real Madrid"
+          />
+          <div class="info">
+            <p class="nomeProduto">Camisa Real Madrid US Pack</p>
+            <p class="preco">R$ 499,99</p>
+          </div>
+          <button class="botao">COMPRAR</button>
+        </div>
+
+        <div class="container">
+          <img
+            src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/6c96074521244399bce6e6756e4738e7_9366/Camisa_I_CR_Flamengo_81_Vermelho_JF0433_25_model.jpg"
+            alt="Camisa Flamengo"
+          />
+          <div class="info">
+            <p class="nomeProduto">Camisa I CR Flamengo 81</p>
+            <p class="preco">R$ 599,99</p>
+          </div>
+          <button class="botao">COMPRAR</button>
+        </div>
+
+        <div class="container">
+          <img
+            src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/9ae59d2a8c6249c9a3b1fefc31a9d595_9366/Camisa_Manchester_United_25-26_para_Casa_Vermelho_JI7428_21_model.jpg"
+            alt="Camisa Flamengo"
+          />
+          <div class="info">
+            <p class="nomeProduto">Camisa Manchester United 25/26 para Casa</p>
+            <p class="preco">R$ 399,99</p>
+          </div>
+          <button class="botao">COMPRAR</button>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

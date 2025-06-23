@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "MontSerrat", sans-serif;
+  color: #404040;
+  line-height: 1.2;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+
+  & a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 6rem;
+  & img {
+    width: 10rem;
+  }
+
+  & nav ul {
+    display: flex;
+    gap: 4rem;
+  }
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightgray;
+  gap: 4rem;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: start;
+  background-color: #eaeeef;
+  max-width: 20rem;
+  height: 30rem;
+  padding: 2rem;
+  border: 2px solid #1d202f;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.9rem 0.4rem #1d202f3b;
+
+  & img {
+    align-self: center;
+    width: 100%;
+  }
+
+  .info {
+    display: flex;
+    flex-flow: column;
+    gap: 0.7rem;
+    text-align: center;
+
+    & .nomeProduto {
+      font-size: 1.3rem;
+      color: #1d202f;
+      font-weight: bold;
+    }
+
+    & .preco {
+      font-size: 1.2rem;
+      color: #1d202f;
+    }
+  }
+
+  & .botao {
+    background-color: #1d202f;
+    color: white;
+    width: 100%;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.9rem 0.4rem #1d202f3b;
+    font-size: 1rem;
+
+    &:hover {
+      background-color: white;
+      color: #1d202f;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  }
+}
