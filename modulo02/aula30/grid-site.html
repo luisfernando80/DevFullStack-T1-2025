@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Site</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 62.5%;
+    }
+
+    body {
+      font-size: 1.6rem;
+      line-height: 1.4;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .container {
+      display: grid;
+      border: 1px solid #ccc;
+      grid-template-areas:
+        "header header header"
+        "aside main main"
+        "footer footer footer";
+      grid-template-columns: 15rem 2fr 2fr;
+      gap: 1.5rem;
+      padding: 1.5rem;
+      max-width: 120rem;
+      margin: auto;
+    }
+
+    .header {
+      grid-area: header;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      background-color: #404040;
+      color: white;
+      text-align: center;
+      padding: 0.8rem;
+      font-size: 2.5rem;
+    }
+
+    .aside {
+      grid-area: aside;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      background-color: #eaeaea;
+
+      & ul {
+        list-style: none;
+
+        & a {
+          text-decoration: none;
+
+          & li {
+            color: #404040;
+            padding: 1rem 0;
+            border-bottom: 1px solid #ccc;
+          }
+        }
+      }
+    }
+
+    .main {
+      grid-area: main;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      padding: 1rem;
+    }
+
+    article {
+      margin-bottom: 2.5rem;
+
+      & h2 {
+        color: #404040;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .footer {
+      grid-area: footer;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      text-align: center;
+      background-color: #404040;
+      color: white;
+      padding: 0.8rem;
+    }
+
+    /* RESPONSIVIDADE */
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-areas:
+          "header"
+          "aside"
+          "main"
+          "footer";
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        O Clarim Diário (The Daily Bugle)
+        <nav></nav>
+      </header>
+      <aside class="aside">
+        <ul>
+          <a href="#"><li>Política</li></a>
+          <a href="#"><li>Economia</li></a>
+          <a href="#"><li>Investimentos</li></a>
+          <a href="#"><li>Tecnologia</li></a>
+          <a href="#"><li>Esportes</li></a>
+        </ul>
+      </aside>
+      <main class="main">
+        <article>
+          <h2>Política: Wilson Fisk se candidata a Prefeito de Nova York</h2>
+          <p>Homem-aranha está com seus dias contatos.</p>
+        </article>
+        <article>
+          <h2>Doutor Otto Octavios ganha prêmio de mérito científico!</h2>
+          <p>Dedico ao meu querido aluno Peter Parker.</p>
+        </article>
+        <article>
+          <h2>Homem-aranha é visto em cima do telhado</h2>
+          <p>Prendam ele!</p>
+        </article>
+        <article>
+          <h2>Peça de Shakespeare no Teatro Municipal</h2>
+          <p>
+            Peça será estrelada por Mary Jane Watson e seu amigo Harry Osborn.
+          </p>
+        </article>
+      </main>
+      <footer class="footer">
+        © 2025 - Editor-chefe e melhor jornalista do país, além de ser o mais
+        humilde: J. Jonah Jameson
+      </footer>
+    </div>
+  </body>
+</html>
