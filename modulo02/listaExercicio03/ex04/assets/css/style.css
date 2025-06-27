@@ -1,0 +1,25 @@
+header,
+main,
+footer {
+  border: 7px solid red;
+  padding: 15px;
+  margin: 20px;
+  text-align: center;
+}
+
+header {
+  background-color: #c1c2c3;
+  color: white;
+  text-shadow: 0 0 10px black;
+}
+
+main {
+  background-color: black;
+  color: yellow;
+  height: 55vh;
+}
+
+footer {
+  background-color: yellow;
+  color: red;
+}
