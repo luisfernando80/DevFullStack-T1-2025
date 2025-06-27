@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 03 - Formulário</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <form action="">
+        <h2>Feedback</h2>
+
+        <div class="input">
+          <label for="name">Nome:</label>
+          <input type="name" placeholder="* Seu nome completo" required />
+        </div>
+
+        <div class="input">
+          <label for="email">Email:</label>
+          <input type="email" placeholder="* Seu melhor e-mail" required />
+        </div>
+
+        <div class="input">
+          <label for="text">Endereço:</label>
+          <input type="text" placeholder="* Endereço completo" required />
+        </div>
+
+        <div class="input feedback">
+          <label for="">Feedback: </label>
+          <select name="role" id="">
+            <option value="">Selecione o feedback</option>
+            <option value="Positivo">Positivo</option>
+            <option value="Construtivo">Construtivo</option>
+            <option value="Negativo">Negativo</option>
+            <option value="Formal">Formal</option>
+            <option value="Informal">Informal</option>
+          </select>
+        </div>
+
+        <textarea
+          name="text"
+          id="text"
+          placeholder="Deixe aqui o seu feedback..."
+          required
+        ></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>
