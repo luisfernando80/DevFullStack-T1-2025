@@ -1,97 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   background-color: black;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #404040;
+  font-family: "MontSerrat", sans-serif;
 }
+
+/* GRID */
 
 main {
+  display: flex;
   height: 100vh;
-  align-content: center;
-  text-align: center;
-  margin: auto 20px;
 }
 
-h1,
-p {
-  color: white;
-}
-
-.grid {
+.container {
   display: grid;
-  justify-content: center;
-  align-content: center;
 
-  gap: 20px;
-  max-width: 1100px;
-  background-color: black;
-  border: 5px solid white;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 1fr;
 
-  /* Esta é a solução mais flexível. As imagens se ajustam automaticamente ao tamanho da tela:
-     auto-fit: As colunas se expandem para preencher o espaço disponível
-     minmax(110px, 1fr): Tamanho mínimo de 110px, máximo flexível */
-  /* grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); */
-
-  /* Esta mantém o tamanho fixo das imagens e centraliza o grid: 
-     auto-fill: Mantém o tamanho das colunas e adiciona espaços vazios se necessário*/
-  grid-template-columns: repeat(auto-fill, 110px);
-
-  grid-auto-rows: 110px;
   margin: auto;
-  padding: 20px;
+  width: max-content;
+  padding: 2rem;
+  gap: 1rem;
 }
 
-.item {
-  border-radius: 10px;
-  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.534);
+.box {
+  width: 20rem;
+  height: max-content;
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border-radius: 1rem;
+
+  & img {
+    max-width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  & p {
+    text-align: center;
+    font-size: 1.8rem;
+  }
 }
 
-.img01 {
-  background-image: url(https://static.vecteezy.com/ti/fotos-gratis/t2/23701963-selvagem-leopardo-animal-ilustracao-ai-generativo-gratis-foto.jpg);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+/* MEDIA QUERIES */
 
-.img02 {
-  background-image: url(https://storage.googleapis.com/dpw/app/uploads/2019/04/lazy-loading-nativo-imagens-iframes_.jpg);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
+@media screen and (max-width: 780px) {
+  .container {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-
-.img03 {
-  background-image: url(https://media.istockphoto.com/id/1407570760/es/foto/coloridos-detalles-de-las-alas-traseras-de-los-loros-guacamayos.jpg?s=612x612&w=0&k=20&c=HRGSNMfEKA2plmTXgG7znYFehde8nBqcyhp99L26uZE=);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.img04 {
-  background-image: url(https://static.vecteezy.com/ti/fotos-gratis/p1/21950520-lobo-ilustracao-ai-gerado-gratis-foto.jpg);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.img05 {
-  background-image: url(https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.img06 {
-  background-image: url(https://storage.googleapis.com/novo-blog-wordpress/2023/07/c34a5169-como-ler-imagens.jpg);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.img07 {
-  background-image: url(https://blog.accurate.com.br/wp-content/uploads/2024/06/beneficios-da-analise-de-imagens-por-ia.jpeg);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.img08 {
-  background-image: url(https://conteudo.imguol.com.br/c/noticias/1c/2022/05/24/imagem-criada-no-imagen-prototipo-do-google-que-cria-imagens-baseadas-em-texto-neste-caso-um-cachorro-corgi-andando-de-bicicleta-na-times-square-usando-oculos-de-sol-e-chapeu-de-praia-1653397634334_v2_900x506.jpg);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
+@media screen and (max-width: 480px) {
+  .container {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
